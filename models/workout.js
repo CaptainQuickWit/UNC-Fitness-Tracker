@@ -15,12 +15,12 @@ const theSchema = new Schema(
   exercises: [
 
     {
-    name : {
+    type : {
         type: String,
         trim : true,
-        required : "Enter Exercise name"
+        required : "Enter Exercise type"
       },
-      type : {
+      name : {
         type : String,
         enum: ["resistance", "cardio"],
         required : "Enter an Exercise type, either resistance or cardio"
