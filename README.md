@@ -2,89 +2,49 @@
 For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
 
 
-# 20 React: React Portfolio
+# Unit 17 NoSQL Homework: Workout Tracker
 
-## Your Task
-Being a web developer means being part of a community. You’ll need a place not only to share your projects while you're applying for jobs or working as a freelancer but also to share your work with other developers and collaborate on projects.
-Your task is to create a portfolio using your new React skills, which will help set you apart from other developers whose portfolios don’t use the latest technologies. 
-You’ll deploy this application to GitHub Pages. Follow the instructions in the Git Guide or consult the [Create React App Docs on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) to create a build that you can deploy.
+For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
 
 ## User Story
 
-```md
-AS AN employer looking for candidates with experience building single-page applications
-I WANT to view a potential employee's deployed React portfolio of work samples
-SO THAT I can assess whether they're a good candidate for an open position
-```
-## Getting Started
+* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
 
-You’ll use `create-react-app` to build your portfolio, which will include the following:
-* A single `Header` component that appears on multiple pages
-* A single `Navigation` component within the header that will be used to conditionally render the different sections of your portfolio
-* A single `Project` component that will be used multiple times in the Portfolio section
-* A single `Footer` component that appears on multiple pages
+## Business Context
 
-**Note:** Because this application doesn’t include a back end or connect to an API, the contact form doesn't need to save this information right now. You'll add back-end functionality in the next few weeks. In the meantime, consider including your email address and phone number on the Contact page.
+A consumer will reach their fitness goals more quickly when they track their workout progress.
 
-### Projects
+## Acceptance Criteria
 
-For each project that is featured in your portfolio, include the following:
+When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+The user should be able to:
 
-* An image of the deployed application (either a short animated GIF or screenshot)
-* The title of the project
-* A link to the deployed application
-* A link to the corresponding GitHub repository
+  * Add exercises to the most recent workout plan.
+  * Add new exercises to a new workout plan.
+  * View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
+  * View the total duration of each workout from the past seven workouts on the `stats` page.
 
-### Design
+> **Important:** Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. Check out the [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) to learn how it can be accomplished.
 
-As with the previous portfolio homework, remember that "good" design is subjective; however, your site should look polished. Here are a few guidelines on what that means:
+To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
+  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
+  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+## Commit Early and Often
 
-* Use mobile-first design.
-* Choose a color palette that distinguishes your site from the default Bootstrap theme and unstyled HTML sites. Refer to resources like [Coolors](https://coolors.co/) or another color scheme generator to help you create something that will stand out.
-* Ensure that the font size is large enough to read and that the colors don't cause eye strain.
-* Consider using animations and React component libraries. Note that this will not affect your grade, but it might impact how potential employers gauge your knowledge.
+One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
 
-## Grading Requirements
+1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
 
-This homework is graded based on the following criteria:
+Follow these guidelines for committing:
+* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+* Test your application before you commit to ensure functionality at every step in the development process.
+We want you to have well over 200 commits by graduation, so commit early and often!
 
-### Technical Acceptance Criteria: 40%
+## Submission on BCS
 
-* Satisfies all of the preceding acceptance criteria plus the following:
-    * Application must use React to render content.
-    * Application has a single `Header` component that appears on multiple pages, with a `Navigation` component within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
-    * Application has a single `Project` component that’s used multiple times in the Portfolio section.
-    * Application has a single `Footer` component that appears on multiple pages.
-    * Application must be deployed to GitHub Pages.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-* Application loads with no errors.
-* Application GitHub URL submitted.
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* User experience is intuitive and easy to navigate.
-* User interface style is clean and polished.
-* Application uses a color scheme other than the default Bootstrap color palette.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-* Repository follows best practices for file structure and naming conventions.
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-* Repository contains multiple descriptive commit messages.
-* Repository contains high-quality README file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README that describes the project.
-
-- - -
-© 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+You are required to submit the following:
+* The URL to the deployed application
+* The URL to the GitHub repository
