@@ -1,3 +1,5 @@
+![Screen Shot 2021-07-19 at 6 23 38 AM](https://user-images.githubusercontent.com/73507926/126146043-b1c8a9cf-3979-454a-8ab9-a9b388fdefcb.png)
+
 # UNC-Fitness-Tracker
 For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
 
