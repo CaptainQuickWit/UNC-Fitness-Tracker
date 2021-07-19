@@ -52,6 +52,6 @@ const theSchema = new Schema(
   ]
 });
 // making a model
-const Workout = mongoose.model("exerciseDB", theSchema);
+const exerciseDB = mongoose.model("exerciseDB", theSchema);
 //export
 module.exports = exerciseDB;
